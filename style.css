@@ -6,7 +6,8 @@
 
   @font-face {
     font-family: "Raleway";
-    src: url(fonts/Raleway-SemiBold.woff2),url(fonts/Raleway-SemiBold.ttf);
+
+    src: url(fonts/Raleway-SemiBold.woff2), url(fonts/Raleway-SemiBold.ttf);
     font-weight: 600;
   }
 
