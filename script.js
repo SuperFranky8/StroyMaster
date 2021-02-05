@@ -59,24 +59,24 @@ btnNext.onclick = function () {
 
 }
 
-let carouselInterval = setInterval(function () {
+// let carouselInterval = setInterval(function () {
 
-if (carouselCounter === -400) {
-		carouselCounter = 0;
-		carouselInner.style.transform = `translateX(${carouselCounter}%)`;
-		carouselDot[dotCounter].style.background = '#DEDEDE';
-		dotCounter = 0;
-		carouselDot[0].style.background = 'rgb(11,126,214)';
+// if (carouselCounter === -400) {
+// 		carouselCounter = 0;
+// 		carouselInner.style.transform = `translateX(${carouselCounter}%)`;
+// 		carouselDot[dotCounter].style.background = '#DEDEDE';
+// 		dotCounter = 0;
+// 		carouselDot[0].style.background = 'rgb(11,126,214)';
 
-	}
-	else {
-	dotCounter++;
-	carouselCounter -= 100;
-	carouselInner.style.transform = `translateX(${carouselCounter}%)`;
-	carouselDot[dotCounter].style.background = 'rgb(11,126,214)';
-	carouselDot[dotCounter-1].style.background = '#DEDEDE';
-}
-}, 1500)
+// 	}
+// 	else {
+// 	dotCounter++;
+// 	carouselCounter -= 100;
+// 	carouselInner.style.transform = `translateX(${carouselCounter}%)`;
+// 	carouselDot[dotCounter].style.background = 'rgb(11,126,214)';
+// 	carouselDot[dotCounter-1].style.background = '#DEDEDE';
+// }
+// }, 1500)
 
 
 
