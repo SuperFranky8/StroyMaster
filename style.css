@@ -257,12 +257,18 @@ transform: scale(1.5);
 /* carousel  */
 
 .header__carousel {
+    display: flex;
     background: #F6F6F6;
+}
+
+.container__carousel {
+    position: relative;
 }
 
 .carousel{
     width: 100%;
-    padding: 135px 0px 0px 0;
+    height: 500px;
+    padding: 130px 0px 0px 0;
     position: relative;
     overflow: hidden;
     background: #F6F6F6;
@@ -287,36 +293,52 @@ transform: scale(1.5);
 }
 
 .carousel__btn-prev {
-    width: 47px;
-    height: 47px;
+    background-image: url(img/left.png);
+    background-size:10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+    display: block;
+    width: 42px;
+    height: 42px;
     position: absolute;
-    top: 40%;
-    /*left: 150px;*/
+    top: 50%;
+    left:-50px;
     border-radius: 50%;
     outline: none;
-    border: none;
+    border: 0.5px solid #4F4F4F;
     z-index: 100;
     opacity: 0.3;
 }
 
 .carousel__btn-next {
-    width: 47px;
-    height: 47px;
+    background-image: url(img/right.png);
+    background-size:10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+    width: 42px;
+    height: 42px;
     border-radius: 50%;
     position: absolute;
-    right: 1px;
-    top: 40%;
+    right: -50px;
+    top: 50%;
     z-index: 100;
     opacity: 0.3;
     outline: none;
-    border: none;
+    border: 0.5px solid #4F4F4F;
+}
+
+.carousel__btn-next:hover, .carousel__btn-prev:hover {
+background-color: #DEDEDE;
+cursor: pointer;
 }
 
 .carousel__indicators {
     list-style-type: none;
     position: absolute;
     bottom: 10px;
-    left: 48%;
+    left: 43%;
 }
 
 .carousel__indicators li {
@@ -342,10 +364,12 @@ font-weight: bold;
 font-size: 38px;
 line-height: 52px;
 color: #111111;
+margin-bottom: 30px;
+
 }
 
 .carousel__price {
- margin-bottom: 125px;
+ /* margin-bottom: 125px; */
  font-family: "Raleway";
 font-style: normal;
 font-weight: 600;
@@ -356,7 +380,7 @@ font-feature-settings: 'pnum' on, 'lnum' on;
 
 .carousel__price {
     display: inline-block;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 .carousel__subtitle {
@@ -367,6 +391,11 @@ font-weight: normal;
 font-size: 18px;
 line-height: 140%;
 color: #111111;
+}
+
+.carousel__subtitle-double {
+    margin-bottom: 40px;
+
 }
 
 .carousel__btn {
@@ -390,21 +419,23 @@ margin-bottom: 23px ;
 
 .carousel__img1 {
 right: 35px;
+height: 490px;
+
 }
 
 .carousel__img2 {
     right: 0px;
-    height: 375px;
+    height: 400px;
  }
 
  .carousel__img3 {
  right: -30px;
- height: 435px;
+ height: 465px;
  }
 
  .carousel__img4 {
     right: 35px;
-    height: 435px;
+    height: 480px;
     }
 
 
