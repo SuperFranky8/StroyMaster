@@ -17,6 +17,7 @@ for (let item of carouselDot){
 		carouselInner.style.transform = `translateX(${-100*item.value}%)`;
 		dotCounter = item.value;
 		carouselCounter = -100*item.value;
+
 	}
 
 	btnPrev.onclick = function () {
@@ -34,8 +35,6 @@ for (let item of carouselDot){
 	carouselDot[dotCounter+1].style.background = '#DEDEDE';
 	carouselDot[dotCounter].style.background = 'rgb(11,126,214)';
 }
-y+=1000;
-
 }
 
 btnNext.onclick = function () {
@@ -55,7 +54,6 @@ btnNext.onclick = function () {
 	carouselDot[dotCounter].style.background = 'rgb(11,126,214)';
 	carouselDot[dotCounter-1].style.background = '#DEDEDE';
 }
-y+=1000;
 
 }
 
